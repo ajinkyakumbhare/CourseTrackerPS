@@ -1,3 +1,10 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-02-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
 <template>
     <lightning-card title="Course Offering" icon-name="standard:account">
             <div class="slds-p-around_x-small">
@@ -8,23 +15,22 @@
                        
 
                 <c-sample1 icon-name="standard:Contact"
-                s-object-api-name="Contact"
-                label="Trainer"
-                onlookupupdate={lookupRecord}
-                placeholder="Search Trainer here..."></c-sample1>
+                    s-object-api-name="Contact"
+                    label="Trainer"
+                    onlookupupdate={lookupRecord}
+                    placeholder="Search Trainer here...">
+                </c-sample1>
 
-
-
-                <lightning-card >
+    <lightning-card >
                     <lightning-input type="datetime" onchange={handleDateTimeChangestart}  label="Start Date/Time"></lightning-input>
                     <p slot="footer">{dateTimeFieldValueStart}</p>
                 
                     <lightning-input type="datetime" onchange={handleDateTimeChangeend}  label="End Date/Time"></lightning-input>
                     <p slot="footer">{dateTimeFieldValueEnd}</p>
-                </lightning-card>
+    </lightning-card>
                 
 
                 <lightning-button label="Save" onclick={handleClick}></lightning-button>
             </div>
-        </lightning-card>
+    </lightning-card>
 </template>
